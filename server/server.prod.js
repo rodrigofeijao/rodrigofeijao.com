@@ -35,7 +35,7 @@ import store from '../src/store/store.prod'
  */
 import webpackConfig from '../config/webpack.prod.config'
 const app = new Express()
-const port = 3000
+const port = 80
 const compiler = webpack(webpackConfig)
 
 
