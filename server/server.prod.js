@@ -98,6 +98,7 @@ const renderFullPage = (html, preloadedState) => {
         ${helmet.title.toString()}
         ${helmet.meta.toString()}
         ${helmet.link.toString()}
+        <link rel="stylesheet" type="text/css" href="styles.css">
       </head>
       <body>
         <div id="app">${html}</div>
@@ -121,6 +122,6 @@ app.listen(port, (error) => {
     console.error(error)
   } else {
     console.info(`==> 🌎  Listening on port ${port}.`)
-    console.info(`==> 🌎  Open up http://[serverIP]/ in your browser.`)
+    console.info(`==> 🌎  Open up http://dev.rodrigofeijao.com/ in your browser.`)
   }
 })
