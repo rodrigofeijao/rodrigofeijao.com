@@ -1,0 +1,39 @@
+$black: 	#000000;
+$white: 	#FFFFFF;
+$light:		#f7f7f7;
+
+$darkgrey: 	#565656;
+$grey: 		#646464;
+$lightgrey: #D8D8D8;
+
+$purple: 	#AE52FF;
+$green: 	#50E3C2;
+$grid: 		#EAEAEA;
+
+
+$desktopWidth: 1024px;
+$mobileWidth: 1024px;
+
+
+@mixin flexcenter($inline){
+	@if $inline {
+        display: inline-flex;
+    } @else {
+        display: flex;
+    }
+	align-items: center;
+	justify-content: center;
+}
+
+.fullscreen {
+	width: 100vw;
+	height: 100vh;
+}
+
+@function calcFont($fontSize){
+  @return (($fontSize / 1024)*100) + vh
+}
+
+@function calcWidth($amount){
+  @return (($amount / 1440)*100) + vw
+}

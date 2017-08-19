@@ -1,0 +1,45 @@
+.homepage {
+
+	z-index: 10;
+
+	.shadow {
+		position: fixed;
+		z-index: -1;
+		right: 0;
+		top: 0;
+		width: 60vw;
+		height: 100vh;
+		background: $lightgrey;
+	}
+
+	.greeting {
+		font-family: $sans;
+		font-size: calcFont(14);
+		line-height: calcFont(20);
+		position: absolute;
+		left: calc(20vw + 1px);
+		top: calc( 33vh - ( 2 * #{calcFont(18)}) );
+	}
+
+	.intro {
+		font-family: $serif;
+		font-size: calcFont(46);
+		line-height: calcFont(60);
+
+		position: absolute;
+		left: calc(20vw + 1px);
+		bottom: calc( 33vh + 1px);
+	}
+
+	.cta {
+		font-family: $sans;
+		font-size: calcFont(14);
+		line-height: calcFont(20);
+		position: absolute;
+		bottom: calcFont(40);
+		text-align: center;
+		left: calc(50vw - 40px);
+		width: 80px;
+	}
+
+}

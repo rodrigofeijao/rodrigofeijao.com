@@ -1,0 +1,14 @@
+/**
+ * 	Remove page bouncing // Overscrolling
+ */
+html {
+    overflow: hidden;
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+    -webkit-tap-highlight-color: transparent;
+}

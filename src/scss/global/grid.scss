@@ -1,0 +1,34 @@
+.grid {
+	
+	position: fixed;
+	z-index: 0;
+	opacity: .6;
+	@extend .fullscreen;
+
+	& > div {
+		background: rgba($grid, 1);
+		float: left;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+
+	&__column {
+		width: 1px;
+		height: 100vh;
+		&:nth-of-type(1) { left: 20vw; }
+		&:nth-of-type(2) { left: 40vw; }
+		&:nth-of-type(3) { left: 50vw; }
+		&:nth-of-type(4) { left: 60vw; }
+		&:nth-of-type(5) { left: 80vw; }
+	}
+	
+	&__row {
+		height: 1px;
+		width: 100vw;
+		&:nth-of-type(6) { top: 33vh; }
+		&:nth-of-type(7) { top: 50vh; }
+		&:nth-of-type(8) { top: 66vh; }
+	}
+
+}

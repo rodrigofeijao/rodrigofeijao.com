@@ -1,0 +1,45 @@
+/**
+ * 		Font file importing
+ * 		All fonts files should be placed on /src/css/sass/fonts/
+ */
+// @font-face {
+// 	font-family: 'Druk';
+// 	src: url('sass/fonts/Druk-Medium-Web.eot');
+// 	src: url('sass/fonts/Druk-Medium-Web.eot?#iefix') format('embedded-opentype'),
+// 		url('sass/fonts/Druk-Medium-Web.woff2') format('woff2'),
+// 		url('sass/fonts/Druk-Medium-Web.woff') format('woff');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto+Mono');
+
+/**
+ * 		Variables to be used as font-family
+ * 		e.g.: font-family: $druk
+ */
+
+$serif : 'Playfair Display', serif;
+$sans : 'Roboto Mono', monospace;
+
+
+.regular{
+	font-family: $sans;
+	font-style: normal;
+}
+
+.serif{
+	font-family: serif;
+	font-style: normal;
+}
+
+html, body{
+	@extend .regular;
+}
+
+a, a:hover, a:visited, a:active{
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+	@extend .regular;
+}

@@ -1,0 +1,103 @@
+.work {
+
+    .title {
+        font-family: $serif;
+        font-size: calcFont(46);
+        line-height: calcFont(56);
+        position: absolute;
+        left: 50vw;
+        top: calc( 33vh / 2 );
+
+        &.active {
+            font-size: calcFont(94);
+            line-height: calcFont(94);
+            transform: translateX(- #{calcWidth(50)});
+        }
+    }
+
+    .list {
+
+        position: absolute;
+        left: 20vw;
+        top: 33vh;
+
+        &__item {
+
+            width: 20vw;
+            height: 33vh;
+            float: left;
+            position: absolute;
+
+            &:nth-of-type(1){ left: 0vw; }
+            &:nth-of-type(2){ left: 20vw; }
+            &:nth-of-type(3){ left: 40vw; }
+
+            &.active {
+                z-index: 99;
+                opacity: 1;
+                width: 60vw;
+                left: 0vw;
+            }
+
+            &:hover:not(.active) {
+                & > div { opacity: 1; }
+            }
+
+            &__close {
+                position: absolute;
+                right: -30px;
+                top: -10px;
+                transform: rotate(-90deg);
+            }
+
+            &__thumb {
+
+                height: 100%;
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                opacity: 0.7;
+                transition: all .15s ease-out;
+                
+                &.active {
+                    opacity: 1;
+                }
+            }
+
+            &__caption {
+                font-size: calcFont(14);
+                color: $black;
+                margin-top: calcFont(38);
+                opacity: 0;
+
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    margin-left: -10px;
+                    height: calcFont(2);
+                    width: calcFont(40);
+                    background: $black;
+                }
+
+                a {
+                    display: none;
+                }
+
+                span {
+                    background: $purple;
+                    padding: 4px;
+                }
+
+                &.active {
+                    opacity: 1;
+                    a { display: inline-block; }
+                }
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,29 @@
+.footer {
+	
+	position: absolute;
+	bottom: calcFont(35);
+	text-align: center;
+	width: 20vw;
+	left: 40vw;
+	font-size: calcFont(14);
+	color: $grey;
+
+	& > div {
+
+	}
+
+	&__prev {
+		margin-bottom: calcFont(18);
+	}
+
+	&__active {
+		margin-bottom: calcFont(18);
+		color: $black;
+
+	}
+
+	&__next {
+
+	}
+
+}
