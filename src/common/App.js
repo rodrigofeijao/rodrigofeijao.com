@@ -39,16 +39,21 @@ class App extends React.Component {
 
         this.state = {show: false }
 
-        const ss = new ScrollSwipe({
-            target: document,
-            scrollCb: this.handleScroll.bind(this),
-        });
+        var document = typeof document === 'undefined' ? '' : document;
 
-        this.ss = ss;
+        if (document != '') {
+            const ss = new ScrollSwipe({
+                target: document,
+                scrollCb: this.handleScroll.bind(this),
+            });
+            this.ss = ss;
+        }
+
 
         this.handleScroll = this.handleScroll.bind(this);
         this.toggle = this.toggle.bind(this);
     }
+
 
     handleScroll(e) {
         if (e) {

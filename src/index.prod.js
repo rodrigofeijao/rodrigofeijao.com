@@ -25,6 +25,11 @@ import reducer from './reducers/index'
 import App from './common/App'
 
 /**
+ *  CSS
+ */
+import './scss/index.scss';
+
+/**
  * Get the initial state and set it into a global var to be used o init the store
  * @type {object}
  */
