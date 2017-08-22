@@ -26,7 +26,7 @@ export default class Homepage extends React.Component {
         .to(this.blockIntro, 0.35, {left : '100%'}, '-=.10')
 
         // Start delayed animation
-        setTimeout( ()=>{ tl.play() } , 1200);
+        setTimeout( ()=>{ tl.play() } , 200);
 
     }
 
