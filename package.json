@@ -17,6 +17,7 @@
     "axios": "^0.16.2",
     "create-react-class": "^15.6.0",
     "glitch-canvas": "^1.1.0",
+    "gsap": "^1.20.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-glitch": "^0.1.3",

@@ -19,6 +19,16 @@
 		position: absolute;
 		left: calc(20vw + 1px);
 		top: calc( 33vh - ( 2 * #{calcFont(18)}) );
+		overflow: hidden;
+		color: rgba(#FFF, 0);
+
+		.block {
+			position: absolute;
+			display: block;
+			height: 1000%;
+			width: 0%;
+			background: $grid;
+		}
 	}
 
 	.intro {
@@ -29,6 +39,17 @@
 		position: absolute;
 		left: calc(20vw + 1px);
 		bottom: calc( 33vh + 1px);
+
+		overflow: hidden;
+		color: rgba(#FFF, 0);
+
+		.block {
+			position: absolute;
+			display: block;
+			height: 1000%;
+			width: 0%;
+			background: $grid;
+		}
 	}
 
 	.cta {
